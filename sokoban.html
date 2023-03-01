@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokoban Game</title>
+    <link rel="stylesheet" type="text/css" href="sokoban.css">
+    <script type="text/javascript" src="gameMaps.js"></script>
+    <script type="text/javascript" src="sokoban.js"></script>
+</head>
+<body>
+    <div id="homepage">
+        <h1>Welcome to Sokoban</h1>
+        <div id="gameIntro">
+            <div id="introductionOne">
+                <img src="https://static.wixstatic.com/media/6c7db4_e8f885a403a94961940eb6a67d436789~mv2.png" alt="" id="imgOne">
+                Press the arrow keys to move the man.
+                <button id="nextOne">NEXT</button>
+            </div>
+            <div id="introductionTwo" style="display: none;">
+                <img src="https://static.wixstatic.com/media/6c7db4_2568655d0c244ac4a99d0857d4b5ffb1~mv2.png" alt="" id="imgTwo">
+                You can only push one box at a time and is not able to pull them. A level is solved when each box is on a goal.
+                <button id="nextTwo">NEXT</button>
+            </div>
+            <div id="game-choice-box" style="display: none;">
+                <div class="game-info">
+                    <b>Select the level:</b><br/>
+                </div>
+                <div id="game-level-choice"></div>
+            </div>
+        </div>
+    </div>
+    <div id="game-box-wrap" style="display: none;">
+        <div class="game-box">
+            <div class="game-info">
+                <button id="restart">RESTART</button>
+                <b id="game-info1"></b>
+                <div id="game-info2">
+                    <b style="font-size: 16px;">Record: </b>
+                    <span id="game-info-record" style="font-size: 16px;"></sp>
+                </div>
+            </div>
+            <canvas id="game-canvas" width="500" height="500"></canvas>
+        </div>
+    </div>
+</body>
+</html>

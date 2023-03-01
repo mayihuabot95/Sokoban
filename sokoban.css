@@ -1,0 +1,100 @@
+/* Remove the default inner and outer browser margins */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+
+#game-box-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    width: 40%;
+    height: 100%;
+}
+
+#homepage {
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(190, 179, 117);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+#gameIntro {
+    height: 400px;
+    width: 440px;
+}
+
+#game-level-choice {
+    display: flex;
+    /* Make its internal elements automatically line feed */
+    flex-wrap: wrap;
+    /* Remove the default line spacing between the internal elements */
+    align-content: flex-start;
+    padding: 5px;
+    border: 4px solid gray;
+}
+
+img {
+    width: 100%;
+}
+
+.flex-item {
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+#game-canvas {
+    width: 600px;
+    height: 560px;
+    background-color: rgb(190, 179, 117);
+    border: 2px solid black;
+}
+
+.game-info {
+    position: relative;
+    height: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(95, 81, 3);
+}
+
+#game-info1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#game-info2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#restart {
+    width: 100px;
+    height: 25px;
+    background-color: gray;
+    color: white;
+}
+
+
+
+
